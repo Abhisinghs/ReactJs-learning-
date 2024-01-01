@@ -1,19 +1,23 @@
-function Header() {
-    return (
-        <div>Header</div>
-    )
-}
-function Header1() {
-    return (
-        <div>Header</div>
-    )
-}
-function Main() {
-    return (
-        <div>Main</div>
-    )
+import React from 'react'
+import './Header.css'
+
+const Header = () => {
+    const color=
+        {
+            backgroundColor:"red",
+            border:"2 px solid green"
+        }
+    
+  return (
+    <>
+        <nav style={{
+        backgroundColor:"red",
+        border:"2 px solid green"
+    }}>Header</nav>
+
+    <nav style={color}>Hello</nav>
+    </>
+  )
 }
 
-
-export  {Header,Header1};
-export default Main
+export default Header
