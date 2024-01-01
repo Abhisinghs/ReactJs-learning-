@@ -1,16 +1,14 @@
 import './App.css';
+import {Header,Header1} from './Components/Header/Header';
+import M from './Components/Header/Header';
 
-function MyComponent({name}){
-  return (
-    <>
-      <div className={name}>{name}</div>
-    <hr/>
-    </>
-  )
-}
 function App() {
   return (
-  <div id="hello"> Hello World! <MyComponent name={1} /> <MyComponent name={"abhi1"}/> <MyComponent name={"abhi2"}/> </div>
+  <div> Hello 
+    <Header/>
+    <Header1/>
+    <M/>
+  World!</div>
   )
 }
 export default App;
